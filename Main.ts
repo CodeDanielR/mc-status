@@ -1,5 +1,5 @@
-import getServerStatus from "./utils/getServerStatus";
+import getServerData from "./utils/getServerData";
 
 export default {
-    getServerStatus
+    getServerData
 }

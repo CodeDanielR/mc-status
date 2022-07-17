@@ -7,7 +7,7 @@ import ServerStatusOptions from "../interfaces/ServerStatusOptions"
  * @param { ServerStatusOptions } options
  * @returns ServerStatusData
  */
-export async function getServerStatus(options: ServerStatusOptions) {
+export async function getServerData(options: ServerStatusOptions) {
     const response = await fetch(`https://mcapi.us/server/status?ip=${options.ip}&port=${options.port || 25565}`)
     const json = await response.json()
     if(json.error) throw new Error(`[MC-STATUS]: ${json.error}`)
@@ -32,4 +32,4 @@ export async function getServerStatus(options: ServerStatusOptions) {
     return data as ServerStatusData
 }
 
-export default getServerStatus
+export default getServerData

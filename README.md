@@ -2,4 +2,21 @@ This package will allow you to get information about minecraft servers or accoun
 
 This package using [MCApi](https://mcapi.us).
 
-**Minecraft Server:**
+**Install:**
+
+```
+npm i mc-status
+```
+
+**Requiring the package:**
+
+```js
+    const mcStatus = require('mc-status');
+```
+
+**Get Server Data:**
+
+```js
+    const data = await mcStatus.getServerData({ ip: "example.com", port: 25565 });
+    console.log(data) // returns ServerData
+```
