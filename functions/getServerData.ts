@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
-import ServerStatusData from "../interfaces/ServerStatusData"
-import ServerStatusOptions from "../interfaces/ServerStatusOptions"
+import ServerStatusData from "../interfaces/ServerData"
+import ServerStatusOptions from "../interfaces/ServerDataOptions"
 
 /**
  * 
