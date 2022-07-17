@@ -18,5 +18,5 @@ const mcStatus = require('mc-status');
 
 ```js
 const data = await mcStatus.getServerData({ ip: "example.com", port: 25565 });
-console.log(data) // returns ServerData
+console.log(data)
 ```
