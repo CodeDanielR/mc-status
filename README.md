@@ -11,12 +11,12 @@ npm i mc-status
 **Requiring the package:**
 
 ```js
-    const mcStatus = require('mc-status');
+const mcStatus = require('mc-status');
 ```
 
 **Get Server Data:**
 
 ```js
-    const data = await mcStatus.getServerData({ ip: "example.com", port: 25565 });
-    console.log(data) // returns ServerData
+const data = await mcStatus.getServerData({ ip: "example.com", port: 25565 });
+console.log(data) // returns ServerData
 ```
